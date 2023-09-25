@@ -1,0 +1,229 @@
+/*	
+	    Global Rules: the general rules (styles) for any device or any screen size
+*/
+* {
+    margin: 0;
+    padding: 0;
+    /* 
+            CSS3: to have the padding and the border width 
+            included within the element width 
+    */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+div#wrapper {
+    background-color: #f0ebeb;
+    /* using "max-width" with px in RWD */
+    max-width: 1500px;
+    margin: auto;
+}
+
+/* adding some background and font colors */
+header,
+footer {
+    /* For testing, comment this background color for the header and footer: */
+    background-color: rgb(47, 79, 79);
+    color: rgb(240, 248, 255);
+    text-align: center;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+header {
+    padding: 5px;
+    border-bottom: 1px inset rgb(241, 240, 240);
+    position: fixed;
+    width: 100%;
+}
+
+footer {
+    padding: 5px;
+}
+
+.navLink {
+    cursor: pointer;
+}
+
+/*
+For This example, we want the menu always to open vertically using the humburger icon in any screen size:
+*/
+nav#main-nav {
+    display: flex;
+    justify-content: space-around;
+    /*
+    Learn more: https://css-tricks.com/almanac/properties/j/justify-content/
+    */
+    font-size: 1.6em;
+    padding: 5px 12PX;
+    color: black;
+    position: relative;
+}
+
+/* Hiding the label and the checkbox for the hamburger icon: */
+div#hum-nav label {
+    display: inline-block;
+}
+
+div#hum-nav label:hover {
+    cursor: pointer;
+}
+
+/* 
+Hiding the checkbox with id value "humbuger"
+Notice that the checkbox will still work when the user clicks on the label 
+due to the link between "for" attribute and "id" attribute
+*/
+div#hum-nav input {
+    display: none;
+}
+
+/* 
+Styling the menu items (ul element):
+Hiding the menu items (the full ul element) by default
+*/
+ul#menu-items {
+    display: none;
+    text-align: left;
+    list-style-type: none;
+    background-color: rgb(223, 219, 213);
+}
+
+ul#menu-items a:link,
+ul#menu-items a:visited {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-top: 2px solid rgb(255, 255, 0);
+    /* remove the underline */
+    text-decoration: none;
+}
+
+/* Mouse Effects */
+ul#menu-items a:hover,
+ul#menu-items a:active {
+    background-color: rgb(232, 232, 202);
+}
+
+/* 
+The menu main actions:
+Toggle the menu itmes based on the checkbox => checked/unchecked
+
+Also using z-index with position absolute to have the nav list (ul element) overlays above the page content:
+Check: https://www.tutorialrepublic.com/faq/how-to-overlay-one-div-over-another-div-using-css.php
+*/
+div#hum-nav input:checked~ul#menu-items {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+}
+
+/* make all the images responsive */
+img {
+    /*
+        To make any image responsive:
+        - width: 100% => will keep enlarge the image based on its container element 
+        - max-width: 100%; => will keep enlarge the image but it will NOT ge beyond its actual size
+    */
+    max-width: 100%;
+}
+
+div.topic {
+    padding: 15px;
+    text-align: center;
+}
+
+div.categories {
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+/* Styling the slider constents */
+
+/* <div class="lang-slider"> */
+div.slider {
+    max-width: 800px;
+    margin: 12px auto;
+    overflow: hidden;
+    font-size: x-large;
+}
+
+div.slide {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    float: left;
+    display: none;
+}
+
+div.buttons,
+div.numbering {
+    text-align: center;
+    margin: 10px;
+}
+
+/* Styling the navigation number buttons: */
+.numBtn,
+.main-button {
+    padding: 15px;
+    margin: 5px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.main-button {
+    border-radius: 20%;
+}
+
+
+.numBtn:hover,
+.main-button:hover {
+    cursor: pointer;
+    background-color: rgb(197, 183, 166);
+}
+
+/* *************  End of Global Styles *************** */
+
+/* Second Step: Starting the media queries: */
+/* 1. For mobile (Small Screen) First */
+@media only screen and (max-width: 500px) {
+
+    /* for testing */
+    header {
+        background-color: rgb(190, 187, 134);
+    }
+
+    /* no layout to change in small screens, it looks fine! */
+}
+
+/* 2. For Tablet (Medium Screen) */
+@media only screen and (min-width:501px) and (max-width:900px) {
+
+    /* for testing */
+    header {
+        background-color: rgb(191, 169, 143);
+    }
+
+    div.topic {
+        width: 50%;
+        float: left;
+    }
+}
+
+/* 3. For Desktop (Normal Screen) */
+@media only screen and (min-width:901px) {
+
+    /* for testing */
+    header {
+        background-color: rgb(210, 206, 207);
+    }
+
+    div.topic {
+        width: 25%;
+        float: left;
+    }
+}

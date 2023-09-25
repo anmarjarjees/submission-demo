@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Problem Test Demo</title>
+</head>
+
+<body>
+    <!-- div.wrapper to wrapign the entire page content: -->
+    <div id="wrapper">
+        <!-- for the main page header that contains the nav -->
+        <header>
+            <nav id="main-nav">
+                <!-- Creating the nav HTML5 element as the main wrapper for the entire nav elements -->
+                <div id="hum-nav">
+                    <label for="hamburger" id="hamburger-lbl">&equiv;</label>
+                    <input type="checkbox" id="hamburger">
+                    <!-- 
+                    Using label element to add the symbol for the HTML humburger
+                    Using Checkbox as usual old trick to act as a placeholder for activate/deactivate the menu
+                    The Checkbox will be hidden
+                    Link: https://dev.w3.org/html5/html-author/charref
+                -->
+
+                    <!-- Adding the ul element for the menu items: -->
+                    <ul id="menu-items" role="navigation">
+                        <li>
+                            <a href="#subject1">Topic 1</a>
+                        </li>
+                        <li>
+                            <a href="#subject2">Topic 2</a>
+                        </li>
+                        <li>
+                            <a href="#subject3">Topic 3</a>
+                        </li>
+                        <li>
+                            <a href="#subject4">Topic 4</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navLink">Best Deal</div>
+
+                <div id="loginBtn" class="navLink">Login</div>
+            </nav>
+        </header>
+
+        <div class="categories">
+            <div class="topic" id="subject1">
+                <img src="img/bird.gif" alt="HTML and CSS">
+                <h1>HTML and CSS</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem quae libero mollitia sunt
+                    tenetur a, ab autem nam repellendus saepe molestias blanditiis corrupti quis nobis quasi aliquam
+                    excepturi minus!
+                </p>
+            </div>
+
+            <div class="topic" id="subject2">
+                <img src="img/bird.gif" alt="JavaScript">
+                <h1>JavaScript and jQuery</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem quae libero mollitia sunt
+                    tenetur a, ab autem nam repellendus saepe molestias blanditiis corrupti quis nobis quasi aliquam
+                    excepturi minus!
+                </p>
+            </div>
+
+            <div class="topic" id="subject3">
+                <img src="img/bird.gif" alt="Bootstrap">
+                <h1>Bootstrap Framework</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem quae libero mollitia sunt
+                    tenetur a, ab autem nam repellendus saepe molestias blanditiis corrupti quis nobis quasi aliquam
+                    excepturi minus!
+                </p>
+            </div>
+
+            <div class="topic" id="subject4">
+                <img src="img/bird.gif" alt="ReactJS">
+                <h1>ReactJS Library</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem quae libero mollitia sunt
+                    tenetur a, ab autem nam repellendus saepe molestias blanditiis corrupti quis nobis quasi aliquam
+                    excepturi minus!
+                </p>
+            </div>
+        </div> <!-- div.categories -->
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide" id="lang1">
+                    <h1>PHP</h1>
+                    <p>
+                        PHP is Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente inventore a in,
+                        eveniet
+                        laborum esse praesentium fugit quia obcaecati minus reiciendis suscipit laboriosam maxime
+                        officiis,
+                        beatae quasi dicta dolores.
+                    </p>
+                </div>
+
+                <div class="slide" id="lang2">
+                    <h1>Python</h1>
+                    <p>
+                        Python is Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente inventore a in,
+                        eveniet
+                        laborum esse praesentium fugit quia obcaecati minus reiciendis suscipit laboriosam maxime
+                        officiis,
+                        beatae quasi dicta dolores.
+                    </p>
+                </div>
+
+                <div class="slide" id="lang3">
+                    <h1>Ruby</h1>
+                    <p>
+                        Ruby is Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente inventore a in,
+                        eveniet
+                        laborum esse praesentium fugit quia obcaecati minus reiciendis suscipit laboriosam maxime
+                        officiis,
+                        beatae quasi dicta dolores.
+                    </p>
+                </div>
+
+                <div class="slide" id="lang4">
+                    <h1>Perl</h1>
+                    <p>
+                        Perl is Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente inventore a in,
+                        eveniet
+                        laborum esse praesentium fugit quia obcaecati minus reiciendis suscipit laboriosam maxime
+                        officiis,
+                        beatae quasi dicta dolores.
+                    </p>
+                </div>
+
+                <div class="slide" id="lang5">
+                    <h1>C#</h1>
+                    <p>
+                        C# is Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente inventore a in,
+                        eveniet
+                        laborum esse praesentium fugit quia obcaecati minus reiciendis suscipit laboriosam maxime
+                        officiis,
+                        beatae quasi dicta dolores.
+                    </p>
+                </div>
+
+                <div class="slide" id="lang6">
+                    <h1>Java</h1>
+                    <p>
+                        Java is Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente inventore a in,
+                        eveniet
+                        laborum esse praesentium fugit quia obcaecati minus reiciendis suscipit laboriosam maxime
+                        officiis,
+                        beatae quasi dicta dolores.
+                    </p>
+                </div>
+
+                <div class="slide" id="lang7">
+                    <h1>Go</h1>
+                    <p>
+                        Go is Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente inventore a in,
+                        eveniet
+                        laborum esse praesentium fugit quia obcaecati minus reiciendis suscipit laboriosam maxime
+                        officiis,
+                        beatae quasi dicta dolores.
+                    </p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="buttons">
+                    <button class="main-button" onclick="jumpToItem(-1)">&lt; Prev</button>
+                    <button class="main-button" onclick="jumpToItem(1)">Next &gt;</button>
+                </div>
+
+                <div class="numbering">
+                    <button class="numBtn" onclick="clickItemNum(1)">1</button>
+                    <button class="numBtn" onclick="clickItemNum(2)">2</button>
+                    <button class="numBtn" onclick="clickItemNum(3)">3</button>
+                    <button class="numBtn" onclick="clickItemNum(4)">4</button>
+                    <button class="numBtn" onclick="clickItemNum(5)">5</button>
+                    <button class="numBtn" onclick="clickItemNum(6)">6</button>
+                    <button class="numBtn" onclick="clickItemNum(7)">7</button>
+                </div>
+            </div>
+        </div> <!-- div.slider -->
+
+        <footer>
+            &copy; 2022 - Testing RWD and JavaScript Functions - Anmar Jarjees
+        </footer>
+    </div> <!-- div#wrapper -->
+
+    <!-- link to our external JS file: -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
