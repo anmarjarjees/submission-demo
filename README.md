@@ -9,5 +9,3 @@ NOTE: To open any link in a new tab:
 - [Live Demo](https://anmarjarjees.github.io/submission-demo/)
 - You can see the [live demo](https://anmarjarjees.github.io/submission-demo/) of this repo
 - Link: [Live website](https://anmarjarjees.github.io/submission-demo/)
-- Or using <a> element:
-  - <a href="https://anmarjarjees.github.io/submission-demo/" target="_blank">Live Demo</a>
